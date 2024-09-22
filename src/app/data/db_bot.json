@@ -1,0 +1,1378 @@
+{
+    "dataMap": {},
+    "filePath": "./sw_characters.csv",
+    "_customOperators": [
+        {
+            "id": "startsWithB",
+            "displayName": "startsWithB",
+            "params": [
+                {
+                    "name": "cell",
+                    "dataType": "string",
+                    "message": "Custom parameter message"
+                }
+            ]
+        }
+    ],
+    "_messages": {
+        "customMessages": {
+            "attributeMessage": "Please choose an attribute to filter the characters",
+            "operatorMessage": "Please choose an operator for filtering the attribute",
+            "errorMessage": "Sorry, I didn't get that. Please try again",
+            "continueMessage": "Enter 1 to continue",
+            "resultMessage": "Here is your result. May the force be with you!"
+        },
+        "slots": {
+            "welcomeSlot": [
+                "Welcome to Star Wars Characters Bot!",
+                "I can help to filter Star Wars characters based on different attributes"
+            ],
+            "operatorSlot": [
+                "After you  have entered the operator, you need to enter values for the parameters of the operator"
+            ],
+            "paramsSlot": [],
+            "restartSlot": [],
+            "resultSlot": []
+        }
+    },
+    "currentOperatorIndex": 0,
+    "operatorsData": [
+        {
+            "name": "EndWithOperator",
+            "column": "all",
+            "params": [
+                {
+                    "name": "inputValue",
+                    "dataType": "string",
+                    "isArray": false
+                },
+                {
+                    "name": "compareValue",
+                    "dataType": "string",
+                    "isArray": false,
+                    "message": "Enter the character to end with:"
+                }
+            ]
+        },
+        {
+            "name": "ContainsOperator",
+            "column": "all",
+            "params": [
+                {
+                    "name": "inputValue",
+                    "dataType": "string",
+                    "isArray": false
+                },
+                {
+                    "name": "compareValue",
+                    "dataType": "string",
+                    "isArray": false,
+                    "message": "Enter the string the word should contain:"
+                }
+            ]
+        },
+        {
+            "name": "EqualStringOperator",
+            "column": "all",
+            "params": [
+                {
+                    "name": "inputValue",
+                    "dataType": "string",
+                    "isArray": false
+                },
+                {
+                    "name": "compareValue",
+                    "dataType": "string",
+                    "isArray": false,
+                    "message": "Enter the value the word should be equal to:"
+                }
+            ]
+        },
+        {
+            "name": "StartWith",
+            "column": "all",
+            "params": [
+                {
+                    "name": "inputValue",
+                    "dataType": "string",
+                    "isArray": false
+                },
+                {
+                    "name": "compareValue",
+                    "dataType": "string",
+                    "isArray": false,
+                    "message": "Enter the character to start with:"
+                }
+            ]
+        },
+        {
+            "name": "Equal",
+            "column": "all",
+            "params": [
+                {
+                    "name": "inputValue",
+                    "dataType": "numeric",
+                    "isArray": false
+                },
+                {
+                    "name": "compareValue",
+                    "dataType": "numeric",
+                    "isArray": false,
+                    "message": "Enter the value you would like it to be equal to:"
+                }
+            ]
+        },
+        {
+            "name": "Greater",
+            "column": "all",
+            "params": [
+                {
+                    "name": "inputValue",
+                    "dataType": "numeric",
+                    "isArray": false
+                },
+                {
+                    "name": "compareValue",
+                    "dataType": "numeric",
+                    "isArray": false,
+                    "message": "Enter the value you would like it to be greater than:"
+                }
+            ]
+        },
+        {
+            "name": "Less",
+            "column": "all",
+            "params": [
+                {
+                    "name": "inputValue",
+                    "dataType": "numeric",
+                    "isArray": false
+                },
+                {
+                    "name": "compareValue",
+                    "dataType": "numeric",
+                    "isArray": false,
+                    "message": "Enter the value you would like it to be less than:"
+                }
+            ]
+        },
+        {
+            "name": "Range",
+            "column": "all",
+            "params": [
+                {
+                    "name": "inputValue",
+                    "dataType": "numeric",
+                    "isArray": false
+                },
+                {
+                    "name": "minValue",
+                    "dataType": "numeric",
+                    "isArray": false,
+                    "message": "Enter the minimum value:"
+                },
+                {
+                    "name": "maxValue",
+                    "dataType": "numeric",
+                    "isArray": false,
+                    "message": "Enter the maximum value:"
+                }
+            ]
+        },
+        {
+            "name": "startsWithB",
+            "params": [
+                {
+                    "name": "cell",
+                    "dataType": "string",
+                    "message": "Custom parameter message"
+                }
+            ],
+            "message": "Custom operator message",
+            "column": "name"
+        }
+    ],
+    "_details": {
+        "name": "Star Wars Characters Bot",
+        "description": "Bot to get details of Star Wars characters"
+    },
+    "_data": {
+        "headers": [
+            "name",
+            "height",
+            "mass",
+            "hair_color",
+            "skin_color",
+            "eye_color",
+            "birth_year",
+            "gender",
+            "homeworld",
+            "species"
+        ],
+        "columns": [
+            {
+                "_id": "name",
+                "dataType": "string",
+                "displayName": "name",
+                "customOperators": [],
+                "rows": [
+                    "Luke Skywalker",
+                    "C-3PO",
+                    "R2-D2",
+                    "Darth Vader",
+                    "Leia Organa",
+                    "Owen Lars",
+                    "Beru Whitesun lars",
+                    "R5-D4",
+                    "Biggs Darklighter",
+                    "Obi-Wan Kenobi",
+                    "Anakin Skywalker",
+                    "Wilhuff Tarkin",
+                    "Chewbacca",
+                    "Han Solo",
+                    "Greedo",
+                    "Jabba Desilijic Tiure",
+                    "Wedge Antilles",
+                    "Jek Tono Porkins",
+                    "Yoda",
+                    "Palpatine",
+                    "Boba Fett",
+                    "IG-88",
+                    "Bossk",
+                    "Lando Calrissian",
+                    "Lobot",
+                    "Ackbar",
+                    "Mon Mothma",
+                    "Arvel Crynyd",
+                    "Wicket Systri Warrick",
+                    "Nien Nunb",
+                    "Qui-Gon Jinn",
+                    "Nute Gunray",
+                    "Finis Valorum",
+                    "Jar Jar Binks",
+                    "Roos Tarpals",
+                    "Rugor Nass",
+                    "Ric Olié",
+                    "Watto",
+                    "Sebulba",
+                    "Quarsh Panaka",
+                    "Shmi Skywalker",
+                    "Darth Maul",
+                    "Bib Fortuna",
+                    "Ayla Secura",
+                    "Dud Bolt",
+                    "Gasgano",
+                    "Ben Quadinaros",
+                    "Mace Windu",
+                    "Ki-Adi-Mundi",
+                    "Kit Fisto",
+                    "Eeth Koth",
+                    "Adi Gallia",
+                    "Saesee Tiin",
+                    "Yarael Poof",
+                    "Plo Koon",
+                    "Mas Amedda",
+                    "Gregar Typho",
+                    "Cordé",
+                    "Cliegg Lars",
+                    "Poggle the Lesser",
+                    "Luminara Unduli",
+                    "Barriss Offee",
+                    "Dormé",
+                    "Dooku",
+                    "Bail Prestor Organa",
+                    "Jango Fett",
+                    "Zam Wesell",
+                    "Dexter Jettster",
+                    "Lama Su",
+                    "Taun We",
+                    "Jocasta Nu",
+                    "Ratts Tyerell",
+                    "R4-P17",
+                    "Wat Tambor",
+                    "San Hill",
+                    "Shaak Ti",
+                    "Grievous",
+                    "Tarfful",
+                    "Raymus Antilles",
+                    "Sly Moore",
+                    "Tion Medon",
+                    "Finn",
+                    "Rey",
+                    "Poe Dameron",
+                    "BB8",
+                    "Captain Phasma",
+                    "Padmé Amidala"
+                ],
+                "operatorsArray": [
+                    {
+                        "id": "startWith",
+                        "displayName": "startWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "endWith",
+                        "displayName": "endWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "contains",
+                        "displayName": "contains",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "equalString",
+                        "displayName": "equal",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "startsWithB",
+                        "displayName": "startsWithB",
+                        "params": [
+                            {
+                                "name": "cell",
+                                "dataType": "string",
+                                "message": "Custom parameter message"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "height",
+                "dataType": "numeric",
+                "displayName": "height",
+                "customOperators": [],
+                "rows": [
+                    172, 167, 96, 202, 150, 178, 165, 97, 183, 182, 188, 180,
+                    228, 180, 173, 175, 170, 180, 66, 170, 183, 200, 190, 177,
+                    175, 180, 150, 162.33, 88, 160, 193, 191, 170, 196, 224,
+                    206, 183, 137, 112, 183, 163, 175, 180, 178, 94, 122, 163,
+                    188, 198, 196, 171, 184, 188, 264, 188, 196, 185, 157, 183,
+                    183, 170, 166, 165, 193, 191, 183, 168, 198, 229, 213, 167,
+                    79, 96, 193, 191, 178, 216, 234, 188, 178, 206, 162.33,
+                    162.33, 162.33, 162.33, 162.33, 165
+                ],
+                "operatorsArray": [
+                    {
+                        "id": "equal",
+                        "displayName": "equal",
+                        "params": [
+                            { "name": "inputValue", "dataType": "numeric" },
+                            { "name": "compareValue", "dataType": "numeric" }
+                        ]
+                    },
+                    {
+                        "id": "less",
+                        "displayName": "less",
+                        "params": [
+                            { "name": "inputValue", "dataType": "numeric" },
+                            { "name": "compareValue", "dataType": "numeric" }
+                        ]
+                    },
+                    {
+                        "id": "greater",
+                        "displayName": "greater",
+                        "params": [
+                            { "name": "inputValue", "dataType": "numeric" },
+                            { "name": "compareValue", "dataType": "numeric" }
+                        ]
+                    },
+                    {
+                        "id": "range",
+                        "displayName": "range",
+                        "params": [
+                            { "name": "inputValue", "dataType": "numeric" },
+                            { "name": "minValue", "dataType": "numeric" },
+                            { "name": "maxValue", "dataType": "numeric" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "mass",
+                "dataType": "numeric",
+                "displayName": "mass",
+                "customOperators": [],
+                "rows": [
+                    77, 75, 32, 136, 49, 120, 75, 32, 84, 77, 84, -1, 112, 80,
+                    74, 1, 77, 110, 17, 75, 78.2, 140, 113, 79, 79, 83, -1, -1,
+                    20, 68, 89, 90, -1, 66, 82, -1, -1, -1, 40, -1, -1, 80, -1,
+                    55, 45, -1, 65, 84, 82, 87, -1, 50, -1, -1, 80, -1, 85, -1,
+                    -1, 80, 56.2, 50, -1, 80, -1, 79, 55, 102, 88, -1, -1, 15,
+                    -1, 48, -1, 57, 159, 136, 79, 48, 80, -1, -1, -1, -1, -1, 45
+                ],
+                "operatorsArray": [
+                    {
+                        "id": "equal",
+                        "displayName": "equal",
+                        "params": [
+                            { "name": "inputValue", "dataType": "numeric" },
+                            { "name": "compareValue", "dataType": "numeric" }
+                        ]
+                    },
+                    {
+                        "id": "less",
+                        "displayName": "less",
+                        "params": [
+                            { "name": "inputValue", "dataType": "numeric" },
+                            { "name": "compareValue", "dataType": "numeric" }
+                        ]
+                    },
+                    {
+                        "id": "greater",
+                        "displayName": "greater",
+                        "params": [
+                            { "name": "inputValue", "dataType": "numeric" },
+                            { "name": "compareValue", "dataType": "numeric" }
+                        ]
+                    },
+                    {
+                        "id": "range",
+                        "displayName": "range",
+                        "params": [
+                            { "name": "inputValue", "dataType": "numeric" },
+                            { "name": "minValue", "dataType": "numeric" },
+                            { "name": "maxValue", "dataType": "numeric" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "hair_color",
+                "dataType": "string",
+                "displayName": "hair_color",
+                "customOperators": [],
+                "rows": [
+                    "blond",
+                    "FILL",
+                    "FILL",
+                    "none",
+                    "brown",
+                    "brown, grey",
+                    "brown",
+                    "FILL",
+                    "black",
+                    "auburn, white",
+                    "blond",
+                    "auburn, grey",
+                    "brown",
+                    "brown",
+                    "FILL",
+                    "FILL",
+                    "brown",
+                    "brown",
+                    "white",
+                    "grey",
+                    "black",
+                    "none",
+                    "none",
+                    "black",
+                    "none",
+                    "none",
+                    "auburn",
+                    "brown",
+                    "brown",
+                    "none",
+                    "brown",
+                    "none",
+                    "blond",
+                    "none",
+                    "none",
+                    "none",
+                    "brown",
+                    "black",
+                    "none",
+                    "black",
+                    "black",
+                    "none",
+                    "none",
+                    "none",
+                    "none",
+                    "none",
+                    "none",
+                    "none",
+                    "white",
+                    "none",
+                    "black",
+                    "none",
+                    "none",
+                    "none",
+                    "none",
+                    "none",
+                    "black",
+                    "brown",
+                    "brown",
+                    "none",
+                    "black",
+                    "black",
+                    "brown",
+                    "white",
+                    "black",
+                    "black",
+                    "blonde",
+                    "none",
+                    "none",
+                    "none",
+                    "white",
+                    "none",
+                    "none",
+                    "none",
+                    "none",
+                    "none",
+                    "none",
+                    "brown",
+                    "brown",
+                    "none",
+                    "none",
+                    "black",
+                    "brown",
+                    "brown",
+                    "none",
+                    "FILL",
+                    "brown"
+                ],
+                "operatorsArray": [
+                    {
+                        "id": "startWith",
+                        "displayName": "startWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "endWith",
+                        "displayName": "endWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "contains",
+                        "displayName": "contains",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "equalString",
+                        "displayName": "equal",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "skin_color",
+                "dataType": "string",
+                "displayName": "skin_color",
+                "customOperators": [],
+                "rows": [
+                    "fair",
+                    "gold",
+                    "white, blue",
+                    "white",
+                    "light",
+                    "light",
+                    "light",
+                    "white, red",
+                    "light",
+                    "fair",
+                    "fair",
+                    "fair",
+                    "FILL",
+                    "fair",
+                    "green",
+                    "green-tan, brown",
+                    "fair",
+                    "fair",
+                    "green",
+                    "pale",
+                    "fair",
+                    "metal",
+                    "green",
+                    "dark",
+                    "light",
+                    "brown mottle",
+                    "fair",
+                    "fair",
+                    "brown",
+                    "grey",
+                    "fair",
+                    "mottled green",
+                    "fair",
+                    "orange",
+                    "grey",
+                    "green",
+                    "fair",
+                    "blue, grey",
+                    "grey, red",
+                    "dark",
+                    "fair",
+                    "red",
+                    "pale",
+                    "blue",
+                    "blue, grey",
+                    "white, blue",
+                    "grey, green, yellow",
+                    "dark",
+                    "pale",
+                    "green",
+                    "brown",
+                    "dark",
+                    "pale",
+                    "white",
+                    "orange",
+                    "blue",
+                    "dark",
+                    "light",
+                    "fair",
+                    "green",
+                    "yellow",
+                    "yellow",
+                    "light",
+                    "fair",
+                    "tan",
+                    "tan",
+                    "fair, green, yellow",
+                    "brown",
+                    "grey",
+                    "grey",
+                    "fair",
+                    "grey, blue",
+                    "silver, red",
+                    "green, grey",
+                    "grey",
+                    "red, blue, white",
+                    "brown, white",
+                    "brown",
+                    "light",
+                    "pale",
+                    "grey",
+                    "dark",
+                    "light",
+                    "light",
+                    "none",
+                    "FILL",
+                    "light"
+                ],
+                "operatorsArray": [
+                    {
+                        "id": "startWith",
+                        "displayName": "startWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "endWith",
+                        "displayName": "endWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "contains",
+                        "displayName": "contains",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "equalString",
+                        "displayName": "equal",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "eye_color",
+                "dataType": "string",
+                "displayName": "eye_color",
+                "customOperators": [],
+                "rows": [
+                    "blue",
+                    "yellow",
+                    "red",
+                    "yellow",
+                    "brown",
+                    "blue",
+                    "blue",
+                    "red",
+                    "brown",
+                    "blue-gray",
+                    "blue",
+                    "blue",
+                    "blue",
+                    "brown",
+                    "black",
+                    "orange",
+                    "hazel",
+                    "blue",
+                    "brown",
+                    "yellow",
+                    "brown",
+                    "red",
+                    "red",
+                    "brown",
+                    "blue",
+                    "orange",
+                    "blue",
+                    "brown",
+                    "brown",
+                    "black",
+                    "blue",
+                    "red",
+                    "blue",
+                    "orange",
+                    "orange",
+                    "orange",
+                    "blue",
+                    "yellow",
+                    "orange",
+                    "brown",
+                    "brown",
+                    "yellow",
+                    "pink",
+                    "hazel",
+                    "yellow",
+                    "black",
+                    "orange",
+                    "brown",
+                    "yellow",
+                    "black",
+                    "brown",
+                    "blue",
+                    "orange",
+                    "yellow",
+                    "black",
+                    "blue",
+                    "brown",
+                    "brown",
+                    "blue",
+                    "yellow",
+                    "blue",
+                    "blue",
+                    "brown",
+                    "brown",
+                    "brown",
+                    "brown",
+                    "yellow",
+                    "yellow",
+                    "black",
+                    "black",
+                    "blue",
+                    "FILL",
+                    "red, blue",
+                    "FILL",
+                    "gold",
+                    "black",
+                    "green, yellow",
+                    "blue",
+                    "brown",
+                    "white",
+                    "black",
+                    "dark",
+                    "hazel",
+                    "brown",
+                    "black",
+                    "FILL",
+                    "brown"
+                ],
+                "operatorsArray": [
+                    {
+                        "id": "startWith",
+                        "displayName": "startWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "endWith",
+                        "displayName": "endWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "contains",
+                        "displayName": "contains",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "equalString",
+                        "displayName": "equal",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "birth_year",
+                "dataType": "string",
+                "displayName": "birth_year",
+                "customOperators": [],
+                "rows": [
+                    "19BBY",
+                    "112BBY",
+                    "33BBY",
+                    "41.9BBY",
+                    "19BBY",
+                    "52BBY",
+                    "47BBY",
+                    "FILL",
+                    "24BBY",
+                    "57BBY",
+                    "41.9BBY",
+                    "64BBY",
+                    "200BBY",
+                    "29BBY",
+                    "44BBY",
+                    "600BBY",
+                    "21BBY",
+                    "FILL",
+                    "896BBY",
+                    "82BBY",
+                    "31.5BBY",
+                    "15BBY",
+                    "53BBY",
+                    "31BBY",
+                    "37BBY",
+                    "41BBY",
+                    "48BBY",
+                    "FILL",
+                    "8BBY",
+                    "FILL",
+                    "92BBY",
+                    "FILL",
+                    "91BBY",
+                    "52BBY",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "62BBY",
+                    "72BBY",
+                    "54BBY",
+                    "FILL",
+                    "48BBY",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "72BBY",
+                    "92BBY",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "22BBY",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "82BBY",
+                    "FILL",
+                    "58BBY",
+                    "40BBY",
+                    "FILL",
+                    "102BBY",
+                    "67BBY",
+                    "66BBY",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "46BBY"
+                ],
+                "operatorsArray": [
+                    {
+                        "id": "startWith",
+                        "displayName": "startWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "endWith",
+                        "displayName": "endWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "contains",
+                        "displayName": "contains",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "equalString",
+                        "displayName": "equal",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "gender",
+                "dataType": "string",
+                "displayName": "gender",
+                "customOperators": [],
+                "rows": [
+                    "male",
+                    "FILL",
+                    "FILL",
+                    "male",
+                    "female",
+                    "male",
+                    "female",
+                    "FILL",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "hermaphrodite",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "none",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "female",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "female",
+                    "male",
+                    "male",
+                    "female",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "female",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "male",
+                    "female",
+                    "male",
+                    "male",
+                    "female",
+                    "female",
+                    "female",
+                    "male",
+                    "male",
+                    "male",
+                    "female",
+                    "male",
+                    "male",
+                    "female",
+                    "female",
+                    "male",
+                    "female",
+                    "male",
+                    "male",
+                    "female",
+                    "male",
+                    "male",
+                    "male",
+                    "female",
+                    "male",
+                    "male",
+                    "female",
+                    "male",
+                    "none",
+                    "female",
+                    "female"
+                ],
+                "operatorsArray": [
+                    {
+                        "id": "startWith",
+                        "displayName": "startWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "endWith",
+                        "displayName": "endWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "contains",
+                        "displayName": "contains",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "equalString",
+                        "displayName": "equal",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "homeworld",
+                "dataType": "string",
+                "displayName": "homeworld",
+                "customOperators": [],
+                "rows": [
+                    "Tatooine",
+                    "Tatooine",
+                    "Naboo",
+                    "Tatooine",
+                    "Alderaan",
+                    "Tatooine",
+                    "Tatooine",
+                    "Tatooine",
+                    "Tatooine",
+                    "Stewjon",
+                    "Tatooine",
+                    "Eriadu",
+                    "Kashyyyk",
+                    "Corellia",
+                    "Rodia",
+                    "Nal Hutta",
+                    "Corellia",
+                    "Bestine IV",
+                    "FILL",
+                    "Naboo",
+                    "Kamino",
+                    "FILL",
+                    "Trandosha",
+                    "Socorro",
+                    "Bespin",
+                    "Mon Cala",
+                    "Chandrila",
+                    "FILL",
+                    "Endor",
+                    "Sullust",
+                    "FILL",
+                    "Cato Neimoidia",
+                    "Coruscant",
+                    "Naboo",
+                    "Naboo",
+                    "Naboo",
+                    "Naboo",
+                    "Toydaria",
+                    "Malastare",
+                    "Naboo",
+                    "Tatooine",
+                    "Dathomir",
+                    "Ryloth",
+                    "Ryloth",
+                    "Vulpter",
+                    "Troiken",
+                    "Tund",
+                    "Haruun Kal",
+                    "Cerea",
+                    "Glee Anselm",
+                    "Iridonia",
+                    "Coruscant",
+                    "Iktotch",
+                    "Quermia",
+                    "Dorin",
+                    "Champala",
+                    "Naboo",
+                    "Naboo",
+                    "Tatooine",
+                    "Geonosis",
+                    "Mirial",
+                    "Mirial",
+                    "Naboo",
+                    "Serenno",
+                    "Alderaan",
+                    "Concord Dawn",
+                    "Zolan",
+                    "Ojom",
+                    "Kamino",
+                    "Kamino",
+                    "Coruscant",
+                    "Aleen Minor",
+                    "FILL",
+                    "Skako",
+                    "Muunilinst",
+                    "Shili",
+                    "Kalee",
+                    "Kashyyyk",
+                    "Alderaan",
+                    "Umbara",
+                    "Utapau",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "FILL",
+                    "Naboo"
+                ],
+                "operatorsArray": [
+                    {
+                        "id": "startWith",
+                        "displayName": "startWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "endWith",
+                        "displayName": "endWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "contains",
+                        "displayName": "contains",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "equalString",
+                        "displayName": "equal",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    }
+                ]
+            },
+            {
+                "_id": "species",
+                "dataType": "string",
+                "displayName": "species",
+                "customOperators": [],
+                "rows": [
+                    "Human",
+                    "Droid",
+                    "Droid",
+                    "Human",
+                    "Human",
+                    "Human",
+                    "Human",
+                    "Droid",
+                    "Human",
+                    "Human",
+                    "Human",
+                    "Human",
+                    "Wookiee",
+                    "Human",
+                    "Rodian",
+                    "Hutt",
+                    "Human",
+                    "Human",
+                    "Yoda's species",
+                    "Human",
+                    "Human",
+                    "Droid",
+                    "Trandoshan",
+                    "Human",
+                    "Human",
+                    "Mon Calamari",
+                    "Human",
+                    "Human",
+                    "Ewok",
+                    "Sullustan",
+                    "Human",
+                    "Neimodian",
+                    "Human",
+                    "Gungan",
+                    "Gungan",
+                    "Gungan",
+                    "FILL",
+                    "Toydarian",
+                    "Dug",
+                    "FILL",
+                    "Human",
+                    "Zabrak",
+                    "Twi'lek",
+                    "Twi'lek",
+                    "Vulptereen",
+                    "Xexto",
+                    "Toong",
+                    "Human",
+                    "Cerean",
+                    "Nautolan",
+                    "Zabrak",
+                    "Tholothian",
+                    "Iktotchi",
+                    "Quermian",
+                    "Kel Dor",
+                    "Chagrian",
+                    "Human",
+                    "Human",
+                    "Human",
+                    "Geonosian",
+                    "Mirialan",
+                    "Mirialan",
+                    "Human",
+                    "Human",
+                    "Human",
+                    "Human",
+                    "Clawdite",
+                    "Besalisk",
+                    "Kaminoan",
+                    "Kaminoan",
+                    "Human",
+                    "Aleena",
+                    "FILL",
+                    "Skakoan",
+                    "Muun",
+                    "Togruta",
+                    "Kaleesh",
+                    "Wookiee",
+                    "Human",
+                    "FILL",
+                    "Pau'an",
+                    "Human",
+                    "Human",
+                    "Human",
+                    "Droid",
+                    "FILL",
+                    "Human"
+                ],
+                "operatorsArray": [
+                    {
+                        "id": "startWith",
+                        "displayName": "startWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "endWith",
+                        "displayName": "endWith",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "contains",
+                        "displayName": "contains",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    },
+                    {
+                        "id": "equalString",
+                        "displayName": "equal",
+                        "params": [
+                            { "name": "inputValue", "dataType": "string" },
+                            { "name": "compareValue", "dataType": "string" }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "customOperators": [
+            {
+                "id": "startsWithB",
+                "displayName": "startsWithB",
+                "params": [
+                    {
+                        "name": "cell",
+                        "dataType": "string",
+                        "message": "Custom parameter message"
+                    }
+                ]
+            }
+        ]
+    },
+    "operatorsFiles": {
+        "functions": {
+            "startsWithB": "\n\n        export const startsWithB = function (cell) {\n        return cell.startsWith(\"B\");\n    };"
+        },
+        "main": "\nimport {\n    greaterOperator,\n    lowerOperator,\n    equalOperator,\n    rangeOperator,\n    startWithOperator,\n    endWithOperator,\n    containsOperator,\n    equalStringOperator,    \n} from \"@/app/operators\";\n\nexport const OPERATORS = {\n    greater: greaterOperator,\n    lower: lowerOperator,\n    equal: equalOperator,\n    range: rangeOperator,\n    startWith: startWithOperator,\n    endWith: endWithOperator,\n    contains: containsOperator,\n    equalString: equalStringOperator,\n};\n\nimport { startsWithB } from \"@/app/operators/startsWithB\";\n\nOPERATORS[\"startsWithB\" as keyof typeof OPERATORS] = startsWithB;"
+    },
+    "colors": { "bot": "green", "user": "blue" }
+}
